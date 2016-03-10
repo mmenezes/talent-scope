@@ -5,6 +5,13 @@
 	height: 50px;
 	width: 180px;
 }
+.navbar-brand.logo-link{
+	float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    padding: 0px;
+}
 
 .numberSearchButton{
     padding: 10px 15px;
