@@ -14,8 +14,9 @@ module.exports = BaseController.extend(
                 if(this.authorize(req)) {
                     model.setDB(req.db);
                     req.session.talentScope = true;
+                    req.session.username = this.username;
                     req.session.save();
-                    res.render('dashboard');
+                    res.render('dashboard',{username:req.session.username});
                     
                 } else {
                     res.render('login');

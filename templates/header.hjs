@@ -89,7 +89,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 			<li class="dropdown user user-menu">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                   <img src="/images/avatar5.png" class="user-image" alt="User Image">
-                  <span class="hidden-xs">Admin</span>
+                  <span class="hidden-xs">{{username}}</span>
                 </a>
                 <ul class="dropdown-menu">
                   <!-- User image -->

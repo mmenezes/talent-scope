@@ -227,7 +227,7 @@
 
         var bar_data = {
           data: [["CH01A-0982", 10000], ["CH01A-04582", 8000], ["CH01A-0832", 40000], ["CH03A-0282", 13000], ["CH01A-0952", 17000], ["CH01A-0942", 90000]],
-          color: "#3c8dbc"
+          color: "#ff9800"
         };
         $.plot("#bar-chart", [bar_data], {
           grid: {

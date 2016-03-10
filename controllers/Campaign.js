@@ -12,7 +12,7 @@ module.exports = BaseController.extend(
             },
             manageCampaign:function(req,res,next)
             {
-               res.render('campaign');  		
+               res.render('campaign',{username:req.session.username});  		
             },
 		}
 	);
