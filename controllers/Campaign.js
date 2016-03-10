@@ -1,6 +1,6 @@
 var fs = require('fs');   
 var BaseController = require("./Base"),
-View = require("../views/Base"),
+//View = require("../views/Base"),
 model = new (require("../models/ContentModel"));
 module.exports = BaseController.extend(
 		{

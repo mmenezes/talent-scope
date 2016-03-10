@@ -1,6 +1,6 @@
 var fs = require('fs');   
 var BaseController = require("./Base"),
-View = require("../views/Base"),
+//View = require("../views/Base"),
 model = new (require("../models/ContentModel"));
 module.exports = BaseController.extend(
 		{
@@ -15,14 +15,11 @@ module.exports = BaseController.extend(
                     model.setDB(req.db);
                     req.session.talentScope = true;
                     req.session.save();
-                    var v = new View(res, 'dashboard');
-                     v.render({
-                        title: 'Dashboard'
-                    });
+                    res.render('dashboard');
                     
                 } else {
                     res.render('login');
-                }		
+                }		 
             },
             authorize: function(req) {
                 return (

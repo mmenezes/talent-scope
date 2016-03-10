@@ -11,30 +11,25 @@ var express = require('express'),
 	MongoClient = require('mongodb').MongoClient,
 	Users = require('./controllers/Users'),
 	Campaign = require('./controllers/Campaign');
+    var bodyParser = require('body-parser');
+    var cookieParser = require('cookie-parser');
+    var session = require('express-session');
+    var path = require('path');
 //	partials = require('hogan-express-partials');
 
 // all environments
 // app.set('port', process.env.PORT || 3000);
 app.engine('hjs', require('hogan-express'));
 app.enable('view cache');
-app.configure(function(){
+
 app.set('partials',{header:"header",footer:"footer"});	
 app.set('views', __dirname + '/templates');
 app.set('view engine', 'hjs');
-app.use(express.favicon());
-app.use(express.logger('dev'));
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(express.cookieParser('talent-scope-site'));
-app.use(express.session());
-app.use(app.router);
+app.use(bodyParser.json({limit: '5mb'}));
+app.use(bodyParser.urlencoded({limit: '5mb', extended: true}));
+app.use(cookieParser());
 app.use(express.static(__dirname + '/public'));
-//app.use("/static",express.static(path.join(__dirname, '/public/')));
-});
-// development only
-if ('development' == app.get('env')) {
-  	app.use(express.errorHandler());
-}
+app.use(session({secret: 'secretKey', cookie: {maxAge: 60000 * 60}, saveUninitialized: true, resave: true}));
 
 MongoClient.connect('mongodb://' + config.mongo.host + ':' + config.mongo.port + '/talentScope', function(err, db) {
 	if(err) {
