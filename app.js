@@ -4,7 +4,7 @@
  */
 
 var express = require('express'),
-	http = require('http'), 
+	http = require('http'),
 	path = require('path'),
 	config = require('./config')(),
 	app = express(),
@@ -19,10 +19,12 @@ var express = require('express'),
 
 // all environments
 // app.set('port', process.env.PORT || 3000);
+module.exports=app;
+var router=require('./routes/router');
 app.engine('hjs', require('hogan-express'));
 app.enable('view cache');
 
-app.set('partials',{header:"header",footer:"footer"});	
+app.set('partials',{header:"header",footer:"footer"});
 app.set('views', __dirname + '/templates');
 app.set('view engine', 'hjs');
 app.use(bodyParser.json({limit: '5mb'}));
@@ -39,17 +41,18 @@ MongoClient.connect('mongodb://' + config.mongo.host + ':' + config.mongo.port +
 			req.db = db;
 			next();
 		};
-	
+app.use('/route',router);
+
 		app.all('/',attachDB, function(req, res, next) {
 			Users.run(req, res, next);
-		});	
+		});
         app.all('/logout', attachDB, function(req, res, next){
 			Users.logout(req, res, next);
 		});
         app.get('/manageCampaign',attachDB,function(req,res,next){
             Campaign.manageCampaign(req, res, next);
         });
-        
+
 		http.createServer(app).listen(config.port, function() {
 		  	console.log(
 		  		'Successfully connected to mongodb://' + config.mongo.host + ':' + config.mongo.port,
