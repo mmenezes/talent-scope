@@ -51,6 +51,14 @@ app.use('/route',router);
 		});
         app.get('/manageCampaign',attachDB,function(req,res,next){
             Campaign.manageCampaign(req, res, next);
+        }); 
+        
+        app.all('/addJob',attachDB,function(req,res,next){
+            Campaign.addJob(req, res, next);
+        }); 
+        
+        app.all('/addCampaign',attachDB,function(req,res,next){
+            Campaign.addCampaign(req, res, next);
         });
 
 		http.createServer(app).listen(config.port, function() {

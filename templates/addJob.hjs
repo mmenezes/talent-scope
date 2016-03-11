@@ -1,0 +1,84 @@
+{{>header}}
+      <div class="content-wrapper">
+        <!-- Content Header (Page header) -->
+        <section class="content-header">
+          <h1>
+           Campaign Manager
+          </h1>
+          <ol class="breadcrumb">
+            <li><a href="#"><i class="fa fa-dashboard"></i> Level</a></li>
+            <li class="active">Here</li>
+          </ol>
+        </section>
+
+        <!-- Main content -->
+        <section class="content">
+		 <div class="row">
+            <div class="col-md-3">
+              <a href="#" class="btn btn-warning btn-block margin-bottom">List Campaign</a>
+			</div>
+            <div class="col-md-9">
+          <div class="box box-warning">
+            <div class="box-header with-border">
+              <h3 class="box-title">General Elements</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <form role="form">
+                <!-- text input -->
+                  <div class="row">
+                      <div class="col-md-3">
+                          Job Description :
+                      </div>
+                      <div class="col-md-3">
+                          <textarea placeholder="Enter ..." rows="3" class="form-control"></textarea>
+                      </div>
+                  </div>
+                  </br>
+                 <div class="row">
+                      <div class="col-md-3">
+                          Job Tags :
+                      </div>
+                      <div class="col-md-3">
+                          <input type="text" placeholder="Enter ..." class="form-control">
+                      </div>
+                  </div>
+                  </br>
+                  <div class="row">
+                      <div class="col-md-3">
+                          Verticals :
+                      </div>
+                      <div class="col-md-3">
+                          <select class="form-control">
+                            <option>option 1</option>
+                            <option>option 2</option>
+                            <option>option 3</option>
+                            <option>option 4</option>
+                            <option>option 5</option>
+                          </select>
+                      </div>
+                  </div>
+                  </br>
+                  <div class="row">
+                      <div class="col-md-3">
+                          Years of Experience :
+                      </div>
+                      <div class="col-md-3">
+                          <input type="text" placeholder="Enter ..." class="form-control">
+                      </div>
+                  </div>
+                  </br>
+               
+              </form>
+            </div>
+            <!-- /.box-body -->
+            <div class="box-footer">
+                <button class="btn btn-warning" type="submit">Save</button>
+            </div>
+          </div>
+          <!-- /.box -->
+        </div>
+     </div><!-- /.row -->
+</section><!-- /.content -->
+</div><!-- /.content-wrapper -->
+{{>footer}}
