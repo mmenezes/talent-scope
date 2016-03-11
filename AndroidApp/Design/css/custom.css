@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contacts-list .list-group-title { border-top: 1px solid #ffeb3b;
+    color: #000;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 0 15px;
+	height:24px !important; }
+	
+/*.tabbar .tab-link-highlight { top:0 !important;}
+
+.top104 { top:104px !important; z-index: 1001 !important}*/
+.paddingTop0 { padding-top: 70px !important}
+.spacing0 { margin: 0!important; padding: 0 !important}
+i.ks-icon-contact { width: 24px; height: 24px; background: url(../img/24Px_contact.png) no-repeat;}
+i.ks-icon-sync { width: 24px; height: 24px; background: url(../img/ic_sync_24dp.png) no-repeat;}
+i.ks-icon-search { width: 24px; height: 24px; background: url(../img/ic_search_24dp.png) no-repeat;}
+i.icon-save { width: 24px; height: 24px; background: url(../img/ic_save_black_24dp.png) no-repeat;}
+i.icon-email { width: 24px; height: 24px; background: url(../img/ic_email_black_24dp.png) no-repeat;}
+i.icon-phone { width: 24px; height: 24px; background: url(../img/ic_phone_black_24dp.png) no-repeat;}
+
+
+i.ks-icon-space { width: 100px; height: 24px; }
+.item-media img.profile { border-radius: 0;
+    height: auto;
+    max-width: 100px;
+    border-radius: 50%;
+    width: auto;}
+.item-media img.job { border-radius: 0;
+    height: auto;
+    max-width: 60px;
+    width: auto;}
+.item-media img.dpsmall { border-radius:50%;
+    height: auto;
+    max-width: 30px;
+    width: auto;}
+.marginTB10 { margin: 10px 0 !important}
+.marginLeft0 { margin-left: 0px !important}
+.marginLeft16 { margin-left: 16px !important}
+.marginright60 { margin-right: 60px !important}
+/*.theme-orange .toolbar, .toolbar.theme-orange { background: #ffc165}*/
+
+.list-block .experience {  color: #757575; font-size: 11px; line-height: 12px; }
+.list-block .role { font-size: 12px;}
+.alignCentre { text-align: center !important;}
+.alignCentre a {  width: 50px; height: 50px; display: block; border-radius: 50%; text-align: center; padding: 5px;}
+.alignCentre a:hover{ width: 50px; height: 50px; display: block; border-radius: 50%; padding: 5px; border:solid 1px #ffc107}
+.alignCentre a.active{ width: 50px; height: 50px; display: block; border-radius: 50%; padding: 5px; border:solid 1px #ffc107}
+.alignCentre a img { width: 50px; height: 50px; display: block; border-radius: 50%;}
+
+
+/*.list-block .item-link .item-inner {
+  padding-right: 42px;
+  background-image: url(../img/caret.png);
+  background-size: 9px 15px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  background-position: -webkit-calc(100% - 16px) center;
+  background-position: calc(100% - 16px) center;
+}*/
+
+.list-block.media-list .item-link .caret,
+.list-block li.media-item .item-link .caret{
+  padding-right: 26px;
+  background: no-repeat right top;
+  background-image: url(../img/caret.png);
+  background-size: 7px 12px;
+}
+.navbar .right { margin-right: 0!important}
+.navbar a.link { padding: 0 8px !important}
+
+.profileHead {
+  background: #f4f4f4;
+  padding: 16px 16px;
+  white-space: nowrap;
+  position: relative;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0.54);
+
+  box-sizing: border-box;
+  line-height: 14px;
+  font-size: 14px;
+    
+}
+.profileHead .item-content .item-media { float: left; margin-right: 10px}
+.profileHead .item-content .item-inner .name { font-size: 18px; font-weight: 700; line-height: 25px; padding-top: 10px; color: black;}
+.profileHead .item-content .item-inner .role { font-size: 14px; color: #333; line-height: 20px; }
+.profileHead .item-content .item-inner .company { background: url(../img/ic_work_black_24dp.png) no-repeat; margin-left: 110px;font-size: 12px;  padding-left: 23px;  line-height: 20px }
+.profileHead .item-content .item-inner .location { background: url(../img/ic_location_on_black_24dp.png) no-repeat; margin-left: 110px; font-size: 12px; padding-left: 23px;  line-height: 20px}

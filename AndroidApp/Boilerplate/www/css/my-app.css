@@ -1,0 +1,40 @@
+.login-background-image {
+	height: 100%; /* To fill everything */
+	width: 100%; /* To fill everything */
+	background: url("../img/login-background-image.jpg"); /* Your Image */
+	background-size: cover; /* To cover everything */
+	position: absolute; /* this is most important! */
+	-webkit-filter: blur(2px); /* To blur the image */
+}
+
+.file-button input {
+	font-size: 10000px;
+	position: absolute;
+	left:0; top:0;
+	opacity:0;
+}
+
+.tutorialicon {
+	font-size: 250px;
+	line-height: 170px;
+}
+
+.tutorial-close-btn {
+	background: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	color: #0da6ec;
+}
+
+.welcomescreen-container .welcomescreen-text a{
+	color: #fff;
+	text-decoration: underline;
+}
+
+.tutorial-close-btn {
+	background: #fff;
+	padding: 10px;
+	border-radius: 10px;
+	color: #0da6ec !important;
+	text-decoration: none !important;
+}
