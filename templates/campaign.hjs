@@ -15,7 +15,7 @@
         <section class="content">
 		 <div class="row">
             <div class="col-md-3">
-              <a href="#" class="btn btn-warning btn-block margin-bottom">Add Campaign</a>
+              <a href="/addCampaign" class="btn btn-warning btn-block margin-bottom" >Add Campaign</a>
 			</div>
             <div class="col-md-9">
               <div class="box box-warning">
@@ -23,7 +23,7 @@
                   <h3 class="box-title"></h3>
                     <div class="row">   
                     <div class="col-md-2 " >
-                     <button class="btn btn-warning btn-block">Add Job</button>
+                     <button class="btn btn-warning btn-block" onclick="window.location.href='/addJob'">Add Job</button>
                      </div>
                     <div class="col-md-2">
                         <button class="btn btn-warning">View Matching Campaigns</button>

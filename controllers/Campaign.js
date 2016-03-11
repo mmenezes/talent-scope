@@ -14,5 +14,11 @@ module.exports = BaseController.extend(
             {
                res.render('campaign',{username:req.session.username});  		
             },
+            addJob: function(req,res,next){
+                res.render('addJob',{username:req.session.username}); 
+            },
+            addCampaign: function(req,res,next){
+                res.render('addCampaign',{username:req.session.username}); 
+            }
 		}
 	);
